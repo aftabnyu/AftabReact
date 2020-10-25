@@ -23,7 +23,7 @@ app.post('/api/messages', (req, res) => {
             user: 'nm12292000@gmail.com',
             pass: "Allah786nyunm"
         }
-    })
+    });
     let mailOptions = {
         from: '"League Draven',
         to: 'faisalk.karim3@gmail.com',

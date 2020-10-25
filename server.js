@@ -20,8 +20,8 @@ app.post('/api/messages', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: 'nm12292000@gmail.com',
-            pass: "Allah786nyunm"
+            user: '',
+            pass: ""
         }
     });
     let mailOptions = {

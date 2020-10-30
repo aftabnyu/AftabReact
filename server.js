@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodeMailer= require("nodemailer");
+require("dotenv").config();
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
@@ -21,8 +22,8 @@ app.post('/api/messages', (req, res) => {
         service: 'gmail',
         secure: true,
         auth: {
-            user: 'nm12292000@gmail.com',
-            pass: "Allah786nyunm"
+            user: process.env.S_USER,
+            pass: process.env.S_PASS
         },
         debug: false,
         logger: true

@@ -543,3 +543,46 @@ ul li {
     height: 90%;
     width:90%;
 }
+/* ------------------------------------------------------------------------------
+	 Contact Form
+-------------------------------------------------------------------------------*/
+
+form {
+	text-align: center;
+}
+
+input[type = text], select {
+	width: 90%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #000;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type = submit] {
+	width: 90%;
+	padding: 14px 20px;
+	background-color: #f2f2f2;
+	margin: 8px 0;
+  	border: 1px solid #000;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+	text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+	text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+	text-align: center; 
+ }

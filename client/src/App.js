@@ -8,6 +8,8 @@ import img4 from "./components/images/portfolio/samina.jpg"
 import img5 from "./components/images/portfolio/rida.jpg"
 import img6 from "./components/images/portfolio/faisal.png"
 import img7 from "./components/images/portfolio/rida.jpg"
+// components
+import Form from "./components/Form/Form.js"
 
 function App() {
   return (
@@ -82,17 +84,16 @@ function App() {
       </section>
       <section id="portfolio" className="section portfolio">
         <div className="container-fluid">
-          <div className="row">
-              <h3 style={{textAlign: "center",
+          <h3 style={{textAlign: "center",
               fontSize: "30px",
               color: "#2d3033",
               textTransform: "uppercase",
               paddingBottom: "0.97cm"}}>
                 2020-2021 E-Board
               </h3>
-      
+          <div className="row">
           {/*eslint-disable-next-line*/}
-          <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+          <div className="col portfolio-item"> <a className="portfolio-link">
               <div className="caption">
                 <div className="caption-content">
                   <h3>Rida Ali</h3>
@@ -103,7 +104,7 @@ function App() {
       
       
             {/*eslint-disable-next-line*/}
-            <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+            <div className="col portfolio-item"> <a className="portfolio-link">
               <div className="caption">
                 <div className="caption-content">
                   <h3>Aronno Shafi</h3>
@@ -113,7 +114,7 @@ function App() {
               <img src={img2} className="img-responsive" alt=""/> </a> </div>
       
               {/*eslint-disable-next-line*/}
-              <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+              <div className="col portfolio-item"> <a className="portfolio-link">
                   <div className="caption">
                     <div className="caption-content">
                       <h3>Reham Perry</h3>
@@ -123,7 +124,7 @@ function App() {
                   <img src={img3} className="img-responsive" alt=""/> </a> </div>
       
               {/*eslint-disable-next-line*/}
-              <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+              <div className="col portfolio-item"> <a className="portfolio-link">
                 <div className="caption">
                   <div className="caption-content">
                     <h3>Samina Saifee</h3>
@@ -131,9 +132,10 @@ function App() {
                   </div>
                 </div>
                 <img src={img4} className="img-responsive" alt=""/> </a> </div>
-      
+              </div>
+              <div className = "row">
               {/*eslint-disable-next-line*/}
-              <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+              <div className="col-3 portfolio-item"> <a className="portfolio-link">
               <div className="caption">
                 <div className="caption-content">
                   <h3>Halimatou Diallo</h3>
@@ -143,7 +145,7 @@ function App() {
               <img src={img5} className="img-responsive" alt=""/> </a> </div>
       
               {/*eslint-disable-next-line*/}
-              <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+              <div className="col-3 portfolio-item"> <a className="portfolio-link">
                 <div className="caption">
                   <div className="caption-content">
                     <h3>Faisal Karim</h3>
@@ -153,7 +155,7 @@ function App() {
                 <img src={img6} className="img-responsive" alt=""/> </a> </div>
 
               {/*eslint-disable-next-line*/}
-              <div className="col-sm-3 portfolio-item"> <a className="portfolio-link">
+              <div className="col-3 portfolio-item"> <a className="portfolio-link">
                 <div className="caption">
                   <div className="caption-content">
                     <h3>Muhammad Aziz</h3>
@@ -165,29 +167,34 @@ function App() {
           </div>
         </div>
       </section>
+      <section id = "form">
+        <Form></Form>
+      </section>
       <footer id="contact" className="footer">
         <div className="container-fluid">
-          <div className="col-md-2 left">
-            <h4>Location</h4>
-            <p> Global Spiritual Life - NYU 4th Floor
-                238 Thompson St, New York, NY 10012
-            </p>
-          </div>
-          <div className="col-md-2 left">
-            <h4>Contact Us</h4>
-            <p> Email : <a href="mailto:aftabicnyu@gmail.com"> aftabicnyu@gmail.com </a></p>
-          </div>
-          <div className="col-md-2 left">
-            <h4>Follow Us!</h4>
-            <ul className="footer-share">
-              <li><a href="https://www.facebook.com/aftabNYU/?ref=br_rs"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/aftabicnyu"><i className="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-          <div className="col-md-6 right">
+          <div className = "row">
+            <div className="col">
+              <h4>Location</h4>
+              <p> Global Spiritual Life - NYU 4th Floor
+                <br/>
+                  238 Thompson St, New York, NY 10012
+              </p>
+            </div>
+            <div className="col">
+              <h4>Contact Us</h4>
+              <p> Email : <a href="mailto:aftabicnyu@gmail.com"> aftabicnyu@gmail.com </a></p>
+            </div>
+            <div className="col">
+              <h4>Follow Us!</h4>
+              <ul className="footer-share">
+                <li><a href="https://www.facebook.com/aftabNYU/?ref=br_rs"><i className="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/aftabicnyu"><i className="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div className="col">
               <h4>Development</h4>
-            <p>
-              Made with <i className="fa fa-heart pulse"></i> by <a href="http://fkarim.com">Faisal Karim</a> and <a href="/#">Muhammad Aziz</a></p>
+              <p>Made with <i className="fa fa-heart pulse"></i> by <a href="http://fkarim.com">Faisal Karim</a> and <a href="/#">Muhammad Aziz</a></p>
+            </div>
           </div>
         </div>
       </footer>

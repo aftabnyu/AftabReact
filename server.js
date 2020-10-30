@@ -18,23 +18,28 @@ app.post('/api/messages', (req, res) => {
     let transporter = nodeMailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
+        service: 'gmail',
         secure: true,
         auth: {
-            user: '',
-            pass: ""
-        }
+            user: 'nm12292000@gmail.com',
+            pass: "Allah786nyunm"
+        },
+        debug: false,
+        logger: true
     });
     let mailOptions = {
-        from: '"League Draven',
+        from: 'nm12292000@gmail.com',
         to: 'faisalk.karim3@gmail.com',
-        subject: "Message from AAANY Viewer",
-        text: message.firstName + " " + message.lastName + ": " + message.email + "\n\n" + message.message
+        subject: "Message from Aftab Viewer",
+        text: message.name + ": " + message.email + "\n\n" + message.message
     }
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error);
         }
-        console.log("Message sent")
+        else{
+            console.log("Message sent")
+        }
     })
     console.log(req.body);
 });
